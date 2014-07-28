@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" version="1.1" x="0px" y="0px" width="100px" height="100px" viewBox="0 -2 100 100" enable-background="new 0 -2 100 100" xml:space="preserve">
+<defs>
+</defs>
+<path d="M4.168,21L2.162,49h96.264l-2.005-28H4.168z M50.294,34.119C43.845,34.119,38.616,32,38.616,29h23.355  C61.972,32,56.742,34.119,50.294,34.119z"/>
+<path d="M98.426,88l-2.005-38H4.168L2.162,88H4v2H2v6h96v-6h-1v-2H98.426z M61.972,60c0,3-5.229,5.119-11.678,5.119  c-6.45,0-11.678-2.119-11.678-5.119H61.972z M91,90H10v-2h81V90z"/>
+<rect x="2" y="7" width="96" height="13"/>
+<rect width="100" height="6"/>
+</svg>

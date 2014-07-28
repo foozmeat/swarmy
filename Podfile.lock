@@ -1,0 +1,33 @@
+PODS:
+  - Appirater (2.0.2)
+  - CHCSVParser (2.0.7)
+  - CorePlot (1.5.1)
+  - EAIntroView (2.4.0)
+  - EZAudio (0.0.4)
+  - HockeySDK (3.5.5)
+  - MagicalRecord (2.2):
+    - MagicalRecord/Core
+  - MagicalRecord/Core (2.2)
+  - SASlideMenu (2.0.3)
+
+DEPENDENCIES:
+  - Appirater
+  - CHCSVParser
+  - CorePlot (~> 1.4)
+  - EAIntroView
+  - EZAudio
+  - HockeySDK
+  - MagicalRecord
+  - SASlideMenu
+
+SPEC CHECKSUMS:
+  Appirater: a5e00fb01d47a9a6acf4b2f22323b4ccf4f23fbb
+  CHCSVParser: 0c75a766de2eabc4ff03639945a7ad4a724344d4
+  CorePlot: b15cb1a9a687b9576545104248d6e22033e678bb
+  EAIntroView: 08cbc76bc6feb088e6a8cec6a0773054cd1c7305
+  EZAudio: 46e32897b9324e4a6df18b0afadc1036228de02c
+  HockeySDK: f9af97c2f5df4eb6ca6d2a9c408f2ff498edd608
+  MagicalRecord: 2b471584fc9e3137f3d0a56967917baa4979e224
+  SASlideMenu: 93a4ff0a25fdd00ce9b8c77e1d98bc4ffb9cb648
+
+COCOAPODS: 0.33.1

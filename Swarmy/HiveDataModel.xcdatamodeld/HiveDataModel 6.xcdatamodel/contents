@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5063" systemVersion="13C64" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="SWHive" representedClassName="SWHive" elementID="Hive" syncable="YES">
+        <attribute name="active" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="records" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="SWHiveRecord" inverseName="hive" inverseEntity="SWHiveRecord" syncable="YES"/>
+    </entity>
+    <entity name="SWHiveRecord" representedClassName="SWHiveRecord" elementID="HiveRecord" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="hive" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SWHive" inverseName="records" inverseEntity="SWHive" syncable="YES"/>
+    </entity>
+    <entity name="SWLogEntry" representedClassName="SWLogEntry" parentEntity="SWHiveRecord" elementID="LogEntry" syncable="YES">
+        <attribute name="level" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="logentrytype" optional="YES" attributeType="Integer 16" defaultValueString="0" elementID="type" syncable="YES"/>
+        <attribute name="note" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="SWSample" representedClassName="SWSample" elementID="Sample" syncable="YES">
+        <attribute name="frequency" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="level" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="set" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SWSampleSet" inverseName="samples" inverseEntity="SWSampleSet" syncable="YES"/>
+    </entity>
+    <entity name="SWSampleSet" representedClassName="SWSampleSet" parentEntity="SWHiveRecord" elementID="SampleSet" syncable="YES">
+        <relationship name="samples" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="SWSample" inverseName="set" inverseEntity="SWSample" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="SWHive" positionX="0" positionY="0" width="128" height="90"/>
+        <element name="SWHiveRecord" positionX="0" positionY="0" width="128" height="75"/>
+        <element name="SWLogEntry" positionX="0" positionY="0" width="128" height="90"/>
+        <element name="SWSample" positionX="0" positionY="0" width="128" height="90"/>
+        <element name="SWSampleSet" positionX="0" positionY="0" width="128" height="60"/>
+    </elements>
+</model>
